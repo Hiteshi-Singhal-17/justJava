@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Just Java</string>
+
+    <string-array name="menu">
+        <item>Select an item</item>
+        <item>Latte</item>
+        <item>Espresso</item>
+        <item>Cappuccino</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_of_coffee">Type of Coffee</string>
+    <string name="toppings_on_coffee">Toppings</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">Quantity</string>
+    <string name="decrement_text">-</string>
+    <string name="quantity_2_number">2</string>
+    <string name="increment_symbol">+</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="price_5_number">$5</string>
+    <string name="order_text">Order</string>
+    <string name="Error_Spinner">Select the type of Coffee</string>
+    <string name="name_hint_editText">Name</string>
+
+</resources>
