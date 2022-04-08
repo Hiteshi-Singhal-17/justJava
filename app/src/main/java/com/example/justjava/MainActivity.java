@@ -3,8 +3,13 @@ package com.example.justjava;
 import static com.example.justjava.R.id.order_button;
 import static com.example.justjava.R.id.order_summary_text_view;
 
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,11 +30,14 @@ public class MainActivity extends AppCompatActivity {
     Spinner type;
     int mCoffeeSelected = -1;
     TextView orderSummaryTextView, name;
+    MediaPlayer player ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        To start the service
+        startService(new Intent(this,backgroundMusicService.class)) ;
         type = findViewById(R.id.spinner);
         name = findViewById(R.id.userName);
 //        orderSummaryTextView = findViewById(order_summary_text_view);
@@ -44,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
+
 
     /*
      * Extracts the userName
